@@ -1,16 +1,16 @@
 import React from "react";
 import './App.css';
-import Header from './Header';
-import Menu from "./Menu";
+import Header from './components/Header';
+import Menu from "./components/Menu";
 import data from "./data.js";
-import Categories from "./Categories";
+import Categories from "./components/Categories";
 
-const allCategories =["all", ...new Set(data.map(item => item.category))];
+const allCategories = ["all", ...new Set(data.map(item => item.category))];
 function App() {
   const [items, setItems] = React.useState(data);
   const [categories, setCategories] = React.useState(allCategories);
   const filterCategories = (category) => {
-    if(category === "all") {
+    if (category === "all") {
       setItems(data);
       //return;
     }

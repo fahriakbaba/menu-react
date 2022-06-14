@@ -1,5 +1,5 @@
-import React from 'react'
-import "./App.css";
+import React from "react";
+import "../App.css";
 
 function Header() {
   return (
@@ -7,7 +7,7 @@ function Header() {
       <h1>our menu</h1>
       <div className="underline"></div>
     </header>
-  )
+  );
 }
 
 export default Header;
