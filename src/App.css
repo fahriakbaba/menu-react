@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header {
+    text-align: center;
+    margin: 40px auto 20px auto;
+}
+header h1 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+.underline {
+    background-color: #C59D5F;
+    height: 4px;
+    width: 100px;
+    margin: 5px auto 10px auto; 
+  }
+  .container-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .filter-btn {
+      padding: 8px 15px;
+      color: #C59D5F;
+      cursor: pointer;
+      margin: 5px 3px;
+      border-radius: 3px;
+      border: none;text-transform: capitalize;
+      letter-spacing: 1px;
+      background-color: white;
+      font-size: 1.2rem;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      transition: all .7s;
+  }
+  .filter-btn:hover {
+      color: white;
+      background-color: #C59D5F;
+  }
+  .container-menu{
+      width: 70vw;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: 100%;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      grid-gap: 2rem;
+  }
+  .article-menu{
+      width: 70%;
+      display: grid;
+      grid-template-columns:2fr 3fr;
+      grid-column-gap: 2rem;
+      justify-items: center;
+  }
+  img{
+      display: block;
+      height: 150px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border: .25rem solid #C59D5F;
+      border-radius: 4px;
+  }
+  .header-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 5px;
+      border-bottom: 1px dotted black;
+  }
+  .aside-title {
+      text-transform: capitalize;
+      color: black;
+      letter-spacing: 1px;
+  }
+  .aside-price {
+      color: #C59D5F;
+  }
+  .desc-menu {
+      text-align: justify;
+      margin-top: 25px;
+      color: rgba(128, 128, 128, .8);
+  }
+@media (min-width:1200px) {
+    .container-menu {
+        grid-template-columns: repeat(2, minmax(600px,1fr));
+        grid-column-gap: 0;
+    }
+    .article-menu{
+        width: 90%;
+        grid-column-gap: 2rem;
+    }
+    
+}
+@media (max-width:850px) {
+    .article-menu {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .aside {
+        margin-top: 15px;
+    }
+
+}
+
+
