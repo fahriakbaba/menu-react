@@ -5,7 +5,8 @@ import Menu from "./components/Menu";
 import data from "./data.js";
 import Categories from "./components/Categories";
 
-const allCategories = ["all", ...new Set(data.map(item => item.category))];
+const buttonCategories =  data.map(item => item.category) 
+const allCategories = ["all", ...new Set( [...buttonCategories] )];
 function App() {
   const [items, setItems] = React.useState(data);
   const [categories, setCategories] = React.useState(allCategories);
